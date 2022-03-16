@@ -4,3 +4,8 @@ module "network" {
   # insert the 1 required variable here
   resource_group_name = "h-test"
 }
+
+resource "azurerm_resource_group" "h-test" {
+  name     = "my-resources"
+  location = "US East"
+}
