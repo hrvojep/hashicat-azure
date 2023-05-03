@@ -189,6 +189,7 @@ resource "null_resource" "configure-cat-app" {
       "sudo apt -y install apache2",
       "sudo systemctl start apache2",
       "sudo chown -R ${var.admin_username}:${var.admin_username} /var/www/html",
+      "cp /home/${var.admin_username}/CISRO-ALA.png /var/www/html",
       "chmod +x *.sh",
       "PLACEHOLDER=${var.placeholder} WIDTH=${var.width} HEIGHT=${var.height} PREFIX=${var.prefix} ./deploy_app.sh",
       "sudo apt -y install cowsay",
