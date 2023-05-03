@@ -6,10 +6,12 @@ cat << EOM > /var/www/html/index.html
 <html>
   <head><title>Meow!</title></head>
   <body>
-  <div style="width:800px;margin: 0 auto">
+  <div style="margin: 0 auto">
 
   <!-- BEGIN -->
-  <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
+  #<center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
+  <img src="CISRO-ALA.png"></img>
+
   <center><h2>Meow World! This is H!</h2></center>
   Welcome to ${PREFIX}'s app. Replace this text with your own. 
   <!-- END -->
