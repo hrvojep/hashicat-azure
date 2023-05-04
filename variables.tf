@@ -26,8 +26,10 @@ variable "subnet_prefix" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-#   default     = "Standard_B1s"
-  default     = "Standard_B4ms"
+  #small instance
+  default     = "Standard_B1s"
+  #large instance
+  #default     = "Standard_B4ms"
   
   
 }
